@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --color: #fff;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  min-height: 100vh;
+  background: #222;
+  text-transform: capitalize;
+}
+.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 1rem;
+  /* width: 100vw; */
+}
+.container .videoSelected {
+  border: 3px solid #fff;
+  background: #333;
+  padding: 20px;
+}
+.container .videoSelected video {
+  width: 100%;
+}
+.container .videoSelected .videoTitle {
+  color: var(--color);
+  font-size: 2rem;
+}
+
+.container .videos {
+  background: #333;
+  border-radius: 5px;
+  height: 550px;
+  border: 3px solid #fff;
+  overflow-y: scroll;
+  padding: 20px;
+}
+.container .videos .vdo video {
+  width: 100px;
+  border-radius: 5px;
+}
